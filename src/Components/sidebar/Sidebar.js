@@ -4,7 +4,6 @@ import {NavLink} from 'react-router-dom'
 import './sidebar.css'
 import './responsive.css'
 import Navbar from 'react-bootstrap/Navbar'
-import Collapse from 'react-bootstrap/collapse'
 import {FaBars,FaHome,FaAngleUp,FaAngleDown,FaEnvelope,FaList,FaCommentDots,FaCalendar} from 'react-icons/fa'
 
 function Sidebar(props) { 
