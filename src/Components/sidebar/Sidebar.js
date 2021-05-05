@@ -5,7 +5,7 @@ import './sidebar.css'
 import './responsive.css'
 import Navbar from 'react-bootstrap/Navbar'
 import {FaBars,FaHome,FaAngleUp,FaAngleDown,FaEnvelope,FaList,FaCommentDots,FaCalendar} from 'react-icons/fa'
-import Collapse from 'react-bootstrap/collapse'
+import Collapse from 'react-bootstrap/Collapse'
 
 function Sidebar(props) { 
     const [open, setOpen] = useState(false);
