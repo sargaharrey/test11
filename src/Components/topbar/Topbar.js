@@ -33,7 +33,7 @@ function Topbar(props) {
              ref.current.removeEventListener('click',toggle)
          }
            
-       })
+       },[ref])
     
     return (
         <>
