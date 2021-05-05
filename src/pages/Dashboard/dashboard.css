@@ -1,0 +1,377 @@
+.wrapper {
+  display: flex;
+  overflow: hidden; }
+  .wrapper .page-wrapper {
+    width: 100%;
+    width: calc(100% - 240px);
+    margin-left: 240px;
+    position: relative; }
+    .wrapper .page-wrapper .over {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: none; }
+      .wrapper .page-wrapper .over.active {
+        display: block; }
+    .wrapper .page-wrapper .page-content {
+      padding: 25px;
+      background-color: var(--bgcolor); }
+      .wrapper .page-wrapper .page-content .statictics {
+        margin-bottom: 30px; }
+        .wrapper .page-wrapper .page-content .statictics .row .item:first-of-type {
+          padding-left: 0px; }
+        .wrapper .page-wrapper .page-content .statictics .row .item:last-of-type {
+          padding-right: 0px; }
+        .wrapper .page-wrapper .page-content .statictics .row .item .parent {
+          background-color: #fff;
+          height: auto;
+          padding: 20px;
+          margin-right: 30px;
+          border: 1px solid transparent;
+          border-radius: 6px; }
+          .wrapper .page-wrapper .page-content .statictics .row .item .parent:last-of-type {
+            margin-right: 0px; }
+          .wrapper .page-wrapper .page-content .statictics .row .item .parent .head {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px; }
+            .wrapper .page-wrapper .page-content .statictics .row .item .parent .head h5 {
+              font-size: 14px;
+              text-transform: uppercase;
+              font-weight: 700;
+              color: #000; }
+            .wrapper .page-wrapper .page-content .statictics .row .item .parent .head a span {
+              color: var(--color4);
+              cursor: pointer; }
+            .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item {
+              padding: 4px 14px; }
+              .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item .icon {
+                font-size: 14px;
+                margin-right: 8px;
+                color: var(--color4); }
+              .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item .text {
+                font-size: 13px;
+                color: var(--color4);
+                text-transform: capitalize; }
+              .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item:hover {
+                background-color: var(--bgcolor); }
+                .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item:hover .icon, .wrapper .page-wrapper .page-content .statictics .row .item .parent .head .dropdown-menu .dropdown-item:hover .text {
+                  color: var(--maincolor); }
+          .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .left, .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .right {
+            padding: 0px; }
+          .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .left h2 {
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 8px; }
+          .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .left h5 {
+            font-size: 14px;
+            color: var(--other);
+            display: flex; }
+            .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .left h5 span {
+              margin-right: 5px; }
+            .wrapper .page-wrapper .page-content .statictics .row .item .parent .body .left h5.low {
+              color: var(--other2); }
+      .wrapper .page-wrapper .page-content .main-charts {
+        margin-bottom: 30px; }
+        .wrapper .page-wrapper .page-content .main-charts .item {
+          padding: 0px; }
+          .wrapper .page-wrapper .page-content .main-charts .item.left {
+            padding-right: 15px; }
+          .wrapper .page-wrapper .page-content .main-charts .item.right {
+            padding-left: 15px; }
+          .wrapper .page-wrapper .page-content .main-charts .item .revenue {
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            padding: 20px; }
+            .wrapper .page-wrapper .page-content .main-charts .item .revenue .head {
+              display: flex;
+              justify-content: space-between; }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .head h5 {
+                font-size: 20px;
+                color: #000; }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .head a span {
+                color: var(--color4);
+                cursor: pointer; }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item {
+                padding: 4px 14px; }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item .icon {
+                  font-size: 14px;
+                  margin-right: 8px;
+                  color: var(--color4); }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item .text {
+                  font-size: 13px;
+                  color: var(--color4);
+                  text-transform: capitalize; }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item:hover {
+                  background-color: var(--bgcolor); }
+                  .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item:hover .icon, .wrapper .page-wrapper .page-content .main-charts .item .revenue .head .dropdown-menu .dropdown-item:hover .text {
+                    color: var(--maincolor); }
+            .wrapper .page-wrapper .page-content .main-charts .item .revenue .body {
+              background-color: #fff;
+              border: 1px solid var(--border2);
+              border-radius: 6px;
+              padding: 15px;
+              margin-right: 30px; }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .body h5 {
+                font-size: 16px;
+                color: #000;
+                text-transform: capitalize;
+                margin-bottom: 15px; }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .body h5 span {
+                  color: var(--maincolor); }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .body p {
+                display: flex;
+                justify-content: flex-end; }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .body p .text1 {
+                  color: #000;
+                  font-size: 14px;
+                  margin-right: 30px;
+                  text-transform: capitalize; }
+                  .wrapper .page-wrapper .page-content .main-charts .item .revenue .body p .text1::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: var(--maincolor);
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    margin-right: 8px; }
+                .wrapper .page-wrapper .page-content .main-charts .item .revenue .body p .text2 {
+                  color: #000;
+                  font-size: 14px;
+                  margin-right: 30px;
+                  text-transform: capitalize;
+                  margin-right: 15px; }
+                  .wrapper .page-wrapper .page-content .main-charts .item .revenue .body p .text2::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: var(--mainbg);
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    margin-right: 8px; }
+              .wrapper .page-wrapper .page-content .main-charts .item .revenue .body .main-chart {
+                margin-top: 30px;
+                padding: 0px; }
+          .wrapper .page-wrapper .page-content .main-charts .item .sales {
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            padding: 20px; }
+            .wrapper .page-wrapper .page-content .main-charts .item .sales .head {
+              display: flex;
+              justify-content: space-between; }
+              .wrapper .page-wrapper .page-content .main-charts .item .sales .head h5 {
+                font-size: 20px;
+                color: #000;
+                text-transform: capitalize; }
+              .wrapper .page-wrapper .page-content .main-charts .item .sales .head .next {
+                width: 32px;
+                height: 32px;
+                background-color: #4E56D450;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid transparent;
+                border-radius: 6px;
+                cursor: pointer; }
+                .wrapper .page-wrapper .page-content .main-charts .item .sales .head .next span {
+                  font-size: 15px;
+                  color: var(--maincolor); }
+            .wrapper .page-wrapper .page-content .main-charts .item .sales .body {
+              margin-top: 30px;
+              margin-bottom: 68px; }
+            .wrapper .page-wrapper .page-content .main-charts .item .sales .foot {
+              display: flex;
+              justify-content: center; }
+              .wrapper .page-wrapper .page-content .main-charts .item .sales .foot .text1 {
+                color: #000;
+                font-size: 14px;
+                margin-right: 30px;
+                text-transform: capitalize; }
+                .wrapper .page-wrapper .page-content .main-charts .item .sales .foot .text1::before {
+                  content: '';
+                  display: inline-block;
+                  width: 10px;
+                  height: 10px;
+                  background-color: var(--maincolor);
+                  border: 1px solid transparent;
+                  border-radius: 50%;
+                  margin-right: 8px; }
+              .wrapper .page-wrapper .page-content .main-charts .item .sales .foot .text2 {
+                color: #000;
+                font-size: 14px;
+                text-transform: capitalize;
+                margin-right: 15px; }
+                .wrapper .page-wrapper .page-content .main-charts .item .sales .foot .text2::before {
+                  content: '';
+                  display: inline-block;
+                  width: 10px;
+                  height: 10px;
+                  background-color: var(--mainbg);
+                  border: 1px solid transparent;
+                  border-radius: 50%;
+                  margin-right: 8px; }
+      .wrapper .page-wrapper .page-content .information .left {
+        padding-right: 15px;
+        padding-left: 0px; }
+        .wrapper .page-wrapper .page-content .information .left .invoice {
+          background-color: #fff;
+          padding: 30px;
+          border: 1px solid transparent;
+          border-radius: 6px; }
+          .wrapper .page-wrapper .page-content .information .left .invoice .head {
+            display: flex;
+            justify-content: space-between; }
+            .wrapper .page-wrapper .page-content .information .left .invoice .head h5 {
+              font-size: 14px;
+              color: #000;
+              text-transform: capitalize; }
+            .wrapper .page-wrapper .page-content .information .left .invoice .head a span {
+              color: var(--color4);
+              cursor: pointer; }
+            .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item {
+              padding: 4px 14px; }
+              .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item .icon {
+                font-size: 14px;
+                margin-right: 8px;
+                color: var(--color4); }
+              .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item .text {
+                font-size: 13px;
+                color: var(--color4);
+                text-transform: capitalize; }
+              .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item:hover {
+                background-color: var(--bgcolor); }
+                .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item:hover .icon, .wrapper .page-wrapper .page-content .information .left .invoice .head .dropdown-menu .dropdown-item:hover .text {
+                  color: var(--maincolor); }
+          .wrapper .page-wrapper .page-content .information .left .invoice .body table {
+            table-layout: auto;
+            width: 100%;
+            border-collapse: separate;
+            white-space: nowrap; }
+            .wrapper .page-wrapper .page-content .information .left .invoice .body table thead tr th {
+              width: 100%;
+              padding: 10px 15px;
+              box-sizing: content-box; }
+            .wrapper .page-wrapper .page-content .information .left .invoice .body table tbody tr td {
+              padding: 10px 15px;
+              text-transform: capitalize;
+              box-sizing: content-box;
+              width: 100%;
+              overflow: hidden; }
+              .wrapper .page-wrapper .page-content .information .left .invoice .body table tbody tr td:first-of-type {
+                padding-left: 30px; }
+              .wrapper .page-wrapper .page-content .information .left .invoice .body table tbody tr td div {
+                display: flex;
+                align-items: center;
+                box-sizing: content-box;
+                float: left; }
+                .wrapper .page-wrapper .page-content .information .left .invoice .body table tbody tr td div img {
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 15px;
+                  display: none; }
+      .wrapper .page-wrapper .page-content .information .right {
+        padding-right: 0px; }
+        .wrapper .page-wrapper .page-content .information .right .products {
+          background-color: #fff;
+          padding: 30px;
+          border: 1px solid transparent;
+          border-radius: 6px; }
+          .wrapper .page-wrapper .page-content .information .right .products .head {
+            display: flex;
+            justify-content: space-between; }
+            .wrapper .page-wrapper .page-content .information .right .products .head h5 {
+              font-size: 14px;
+              color: #000;
+              text-transform: capitalize; }
+            .wrapper .page-wrapper .page-content .information .right .products .head a span {
+              color: var(--color4);
+              cursor: pointer; }
+            .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item {
+              padding: 4px 14px; }
+              .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item .icon {
+                font-size: 14px;
+                margin-right: 8px;
+                color: var(--color4); }
+              .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item .text {
+                font-size: 13px;
+                color: var(--color4);
+                text-transform: capitalize; }
+              .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item:hover {
+                background-color: var(--bgcolor); }
+                .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item:hover .icon, .wrapper .page-wrapper .page-content .information .right .products .head .dropdown-menu .dropdown-item:hover .text {
+                  color: var(--maincolor); }
+          .wrapper .page-wrapper .page-content .information .right .products .body .head-panel {
+            margin: 30px 0px; }
+            .wrapper .page-wrapper .page-content .information .right .products .body .head-panel ul {
+              background-color: #FAFCFF;
+              display: flex;
+              padding: 0px;
+              margin: 0px;
+              padding: 10px 15px;
+              justify-content: flex-start; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .head-panel ul li {
+                color: var(--maincolor);
+                margin-right: 30px;
+                text-transform: capitalize;
+                font-size: 14px; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .head-panel ul li:first-of-type {
+                  margin-right: 120px; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .head-panel ul li:last-of-type {
+                  margin-right: 0px; }
+          .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul {
+            padding: 0px; }
+            .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+              padding: 0px 15px; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li :first-child {
+                width: 10px;
+                height: 12px;
+                background-color: #EBEDF3;
+                color: #4E56D430;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                margin-right: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li img {
+                width: 34px;
+                height: 34px;
+                object-fit: cover;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                margin-right: 15px; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li span {
+                margin-right: 30px;
+                text-transform: capitalize; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li span:nth-of-type(2) {
+                  color: #BDA5F8;
+                  margin-right: 60px; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li span:nth-of-type(3) {
+                  color: #FFB98A; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li span:nth-of-type(4) {
+                  color: #4E56D4; }
+                .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li span:nth-of-type(5) {
+                  color: #4E56D480; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:first-of-type span:nth-of-type(6) {
+                color: #EA5455; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:nth-of-type(2) span:nth-of-type(6) {
+                color: #62D45E; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:nth-of-type(3) span:nth-of-type(6) {
+                color: #EA5455; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:nth-of-type(4) span:nth-of-type(6) {
+                color: #6FA5EC; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:nth-of-type(5) span:nth-of-type(6) {
+                color: #62D45E; }
+              .wrapper .page-wrapper .page-content .information .right .products .body .body-panel ul li:nth-of-type(6) span:nth-of-type(6) {
+                color: #6FA5EC; }

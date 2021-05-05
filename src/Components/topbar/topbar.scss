@@ -1,0 +1,222 @@
+.topbar{
+    height: 60px;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 25px;
+    width: 100%;
+    border-bottom: 1px solid var(--border2);
+    .left{
+        display: flex;
+        align-items: center;
+        .toggle{
+            margin-right: 50px;
+            font-size: 20px;
+            color: var(--color4);
+            display: none;
+            cursor: pointer;
+        }  
+        p{
+            font-size: 14px;
+            text-transform: capitalize;
+            color: var(--color4);
+            margin: 0px;
+            span{
+                color: var(--maincolor);
+            }
+            .icon{
+                font-size: 10px;
+                margin: 0px;
+                color: var(--color4);
+            }
+        }
+    }
+    .right{
+        display: flex;
+        form{
+            position: relative;
+            margin-right: 25px;
+        input{
+            width: 224px;
+            height: 32px;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background-color: var(--bgcolor);
+            color: var(--color4);
+            
+        }
+        .icon{
+            position: absolute;
+            top: 8px;
+            right: 15px;
+            color: var(--color4);
+            cursor: pointer;
+        }
+     }
+     .notify{
+         margin-right: 25px;
+         position: relative;
+         display: flex;
+         align-items: center;
+         a{
+             cursor: pointer;
+          &::after{
+              content: none;
+          }
+         .icon{
+          font-size: 20px;
+          color: var(--maincolor);
+         }
+         .circle{
+             position: absolute;
+             top: 3px;
+             right:2px;
+             width: 7px;
+             height: 7px;
+             background-color: var(--maincolor);
+             border: 1px solid transparent;
+             border-radius: 50%;
+             &::before{
+                 content: '';
+                 background-color: var(--maincolor);
+                 position: absolute;
+                 right: 2px;
+                 border-radius: 50%;
+                 border: 1px solid transparent;
+                 display: table; 
+                     -webkit-animation-name: pulse;
+                    animation-name: pulse;
+                    -webkit-animation-duration: .9s;
+                    animation-duration: .9s;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+                  @keyframes pulse {
+                        0% {
+                            opacity: 1;
+                            width: 7px;
+                            height: 7px;
+                            left: 0;
+                            top: 0; }
+                        95% {
+                            opacity: 0.1;
+                            left: -10.5px;
+                            top: -10.5px;
+                            width: 28px;
+                            height: 28px; }
+                        100% {
+                            opacity: 0;
+                            width: 7px;
+                            height: 7px;
+                            left: 0;
+                            top: 0; } }
+               }
+         }
+     }
+     .dropdown-menu{
+         width: 280px;
+        position: absolute;
+        right: -20px;
+        left: auto;
+        border-radius: 0;
+        padding: 0px;
+        margin-top: 10px!important;
+        border: 1px solid #f2f4f9;
+        box-shadow: 0 5px 10px 0 rgba(183,192,206,20%);
+        .dropdown-header{
+          padding: 12px 20px;
+         font-size: 13px;
+         font-weight: 600;
+         text-transform: capitalize;
+         color: var(--color4);
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px solid var(--border2);
+         p{
+        color:#000;
+         }
+        }
+        .dropdown-item{
+                display: flex;
+                align-items: center;
+                padding: 9px 16px;
+                transition: background .2s ease-in-out;
+                &:hover{
+                    .item-text{
+                        p{
+                         color: var(--maincolor);
+                     }
+                    }
+                    }
+                .icon{
+                    font-size: 15px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:nth-of-type(1){
+              .icon{
+                      color: var(--maincolor);
+                      background-color: rgba(114, 124, 245, 0.1);
+                  }
+              }
+                 &:nth-of-type(2){
+              .icon{
+                      color: var(--other);
+                      background-color:rgba(98,212,94,.1)
+                  }
+              }
+                 &:nth-of-type(3){
+              .icon{
+                      color: var(--other2);
+                      background-color: rgba(284, 84, 85, 0.1);
+                  }
+              }
+                 &:nth-of-type(4){
+              .icon{
+                      color: var(--other3);
+                      background-color: rgba(255, 159, 67, 0.1);
+                  }
+              }
+                 &:nth-of-type(5){
+              .icon{
+                      color: var(--other4);
+                      background-color: rgba(102, 209, 209, 0.1);
+                  }
+              }
+              
+              .item-text{
+                 margin-left: 15px;
+                 text-transform: capitalize;
+                 p{
+                     color: #000;
+                     font-size: 13px;
+                     line-height: 1.5;
+                     
+                 &:nth-of-type(2){
+                     color: var(--color4);
+                     font-size: 12px;
+                 }
+                }
+                  
+              }  
+        }
+     }
+    }
+    .admin{
+        img{
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border: 1px solid transparent;
+            border-radius: 50%;
+        }
+    }
+}
+}
